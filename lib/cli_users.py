@@ -37,7 +37,7 @@ def find_user_by_email(session):
     email = input("Email: ").strip()
     user = User.find_by_email(session, email)
     if user:
-        print(f"ID: {user.id}, Email: {user.email}, Role: {user.role}, City: {u.city}")
+        print(f"ID: {user.id}, Email: {user.email}, Role: {user.role}, City: {user.city}")
     else:
         print("User not found.")
 
